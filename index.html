@@ -147,11 +147,54 @@
     color:var(--soft);
   }
 
+
+  .posters-head{
+    text-align:center;
+    font-family:"Caveat",'Segoe Script','Bradley Hand',cursive;
+    font-size:2.3rem;
+    margin:0 0 30px;
+  }
+  .poster-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    margin-bottom:44px;
+  }
+  .poster-link{
+    display:block;
+    text-decoration:none;
+    color:var(--ink);
+    border:2px solid var(--pink);
+    border-radius:18px;
+    padding:14px;
+    background:#fff;
+    text-align:center;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .poster-link:hover,.poster-link:focus{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.09);
+  }
+  .poster-link img{
+    width:100%;
+    border-radius:10px;
+    display:block;
+    border:1px solid rgba(0,0,0,.07);
+  }
+  .poster-link span{
+    display:block;
+    margin-top:12px;
+    font-family:"Caveat",'Segoe Script','Bradley Hand',cursive;
+    font-size:1.5rem;
+    font-weight:700;
+  }
   @media (max-width:720px){
     .intro{grid-template-columns:1fr;gap:26px;}
     .intro .card{order:2;}
     .photo{order:1;width:190px;height:190px;}
     .duo,.tiles{grid-template-columns:1fr;}
+    .poster-grid{grid-template-columns:1fr;}
+    .poster-link{max-width:340px;margin:0 auto;}
     .page{padding:34px 18px 48px;}
   }
 </style>
@@ -178,7 +221,7 @@
   <section class="duo">
     <div class="card c-green">
       <span class="label">Education</span>
-      <p>I have my Bachelor&rsquo;s degree in Liberal Studies, and am currently in a teaching credential program.</p>
+      <p>I have my bachelor&rsquo;s degree in Liberal Studies, and am currently in a teaching credential program.</p>
     </div>
     <div class="card c-purple">
       <span class="label">My goals</span>
@@ -190,6 +233,24 @@
     <span class="label">Welcome, students and families!</span>
     <p>Welcome to our classroom! I am so excited to be your teacher this year. I am so excited to create a year full of learning and creativity. My goal is to make sure all my students feel welcomed, safe, and seen in our classroom.</p>
     <p>Families are important to our students&rsquo; success, and in order to create a strong relationship I will keep in touch through emails, notes sent home, phone calls, and through ClassDojo. I can&rsquo;t wait to get to know each of you this school year.</p>
+  </section>
+
+
+  <h2 class="posters-head">Classroom Posters</h2>
+
+  <section class="poster-grid">
+    <a class="poster-link c-pink" href="welcome-letter.html">
+      <img src="posters/welcome-letter.jpg" alt="Meet the Teacher welcome letter poster">
+      <span>Meet the Teacher</span>
+    </a>
+    <a class="poster-link c-green" href="expectations.html">
+      <img src="posters/expectations.jpg" alt="Our Classroom Expectations poster">
+      <span>Our Classroom Expectations</span>
+    </a>
+    <a class="poster-link c-purple" href="class-rules.html">
+      <img src="posters/class-rules.jpg" alt="Our Class Rules poster">
+      <span>Our Class Rules</span>
+    </a>
   </section>
 
   <section class="card c-yellow contact">
@@ -209,7 +270,7 @@
       </div>
       <div class="tile">
         <p class="key">Grade</p>
-        <p class="val">Elementary school, K&ndash;6th</p>
+        <p class="val">Kindergarten</p>
       </div>
     </div>
   </section>
