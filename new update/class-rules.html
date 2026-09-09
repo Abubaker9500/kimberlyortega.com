@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Class Rules &middot; Ms. Ortega's Classroom</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#f8cdd4;--mint:#c3e7d4;--lavender:#d8d2f0;--butter:#f8e3ad;--peach:#f9d3b8;
+    --ink:#5b4b50;--soft:#93838a;--paper:#fffcfa;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Quicksand",'Trebuchet MS',sans-serif;
+  }
+  .stripe{display:flex;height:12px;}
+  .stripe span{flex:1;}
+  .stripe span:nth-child(1){background:var(--butter);}
+  .stripe span:nth-child(2){background:var(--pink);}
+  .stripe span:nth-child(3){background:var(--lavender);}
+  .stripe span:nth-child(4){background:var(--mint);}
+  .stripe span:nth-child(5){background:var(--peach);}
+
+  .bar{
+    max-width:1000px;margin:0 auto;padding:18px 20px 8px;
+    display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;
+  }
+  .bar a{
+    text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem;
+    border:2px solid var(--lavender);border-radius:999px;padding:7px 16px;background:#fff;
+  }
+  .bar a:hover,.bar a:focus{background:var(--lavender);}
+  a:focus-visible{outline:3px solid var(--lavender);outline-offset:3px;}
+
+  .poster-wrap{max-width:1000px;margin:0 auto;padding:10px 20px 50px;}
+  .poster-wrap img{
+    width:100%;height:auto;display:block;border-radius:14px;
+    box-shadow:0 6px 24px rgba(0,0,0,.10);
+  }
+
+  @media print{
+    .stripe,.bar{display:none;}
+    .poster-wrap{padding:0;max-width:none;}
+    .poster-wrap img{border-radius:0;box-shadow:none;}
+  }
+</style>
+</head>
+<body>
+
+<div class="stripe"><span></span><span></span><span></span><span></span><span></span></div>
+
+<div class="bar">
+  <a href="index.html">&larr; Back to classroom</a>
+  <a href="posters/class-rules.pdf" target="_blank" rel="noopener">Printable PDF</a>
+</div>
+
+<div class="poster-wrap">
+  <img src="posters/class-rules.jpg" alt="Our Class Rules poster">
+</div>
+
+</body>
+</html>
